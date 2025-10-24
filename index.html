@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Hello World — UI Starter</title>
+  <meta name="description" content="A minimal, accessible Hello World UI app." />
+  <link rel="stylesheet" href="./styles.css" />
+</head>
+<body>
+  <header class="container" role="banner">
+    <h1 id="app-title">Hello World 👋</h1>
+  </header>
+
+  <main class="container" role="main">
+    <section aria-labelledby="interaction-heading" class="card">
+      <h2 id="interaction-heading">Try it</h2>
+      <form id="hello-form" aria-describedby="form-help">
+        <label for="name-input">Your name</label>
+        <input id="name-input" name="name" type="text" placeholder="Type your name" autocomplete="name" />
+        <button id="say-hello" type="submit" aria-label="Say hello">Say hello</button>
+        <p id="form-help" class="help">Press Enter or click the button.</p>
+      </form>
+
+      <div id="output" class="output" role="status" aria-live="polite" aria-atomic="true">
+        <!-- Greeting will appear here -->
+      </div>
+    </section>
+
+    <section aria-labelledby="about-heading" class="card">
+      <h2 id="about-heading">About this demo</h2>
+      <ul>
+        <li>Meets UI requirement.</li>
+        <li>Accessible labels, high contrast, keyboard friendly.</li>
+        <li>All assets are local with relative paths.</li>
+      </ul>
+    </section>
+  </main>
+
+  <script src="./script.js"></script>
+</body>
+</html>
